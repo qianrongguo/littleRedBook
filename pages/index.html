@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>RED</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../static/css/index.css"/>
+    <!--<link rel="stylesheet" type="text/css" media="screen" href="../static/css/normalize.css"/>-->
+</head>
+<body>
+<div class="wrap">
+
+    <ul class="list">
+        <li>
+            <div class="item">
+                <img src="http://ci.xiaohongshu.com/e4d185c9-c1c6-4c01-ba3b-8d47b88c2607@r_640w_640h.jpg"
+                     class="lazyload lazyload-image loaded"/>
+                <h3>我的精英英国大家庭（二）
+                    奥利麻麻作为这个家庭最新的成员，自
+                </h3>
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                <img src="http://ci.xiaohongshu.com/90089fd3-b249-4162-a56b-83f2f1661dca@r_640w_640h.jpg"/>
+                <h3>新加坡军营经历👩🏽‍✈️今天是98k小姐姐🔫🔫🔫
+                    这几天清理相册，翻到了三年前在新加坡兵营的照片，觉
+                </h3>
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                <img src="http://ci.xiaohongshu.com/f92edf22-4525-4fcc-9a01-7c74bbdd5b17@r_640w_640h.jpg"/>
+                <h3>新加坡军营经历👩🏽‍✈️今天是98k小姐姐🔫🔫🔫
+                    这几天清理相册，翻到了三年前在新加坡兵营的照片，觉
+                </h3>
+            </div>
+        </li>
+    </ul>
+    <ul class="list">
+        <li>
+            <div class="item">
+                <img src="http://ci.xiaohongshu.com/e4d185c9-c1c6-4c01-ba3b-8d47b88c2607@r_640w_640h.jpg"
+                     class="lazyload lazyload-image loaded"/>
+                <h3>我的精英英国大家庭（二）
+                    奥利麻麻作为这个家庭最新的成员，自
+                </h3>
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                <img src="http://ci.xiaohongshu.com/90089fd3-b249-4162-a56b-83f2f1661dca@r_640w_640h.jpg"/>
+                <h3>新加坡军营经历👩🏽‍✈️今天是98k小姐姐🔫🔫🔫
+                    这几天清理相册，翻到了三年前在新加坡兵营的照片，觉
+                </h3>
+            </div>
+        </li>
+    </ul>
+
+</div>
+<script>
+    function remLayOut() {
+        var rootV = 20
+        var normalV = 320
+        var maxV = 500;
+        var docEl = document.documentElement
+        var fontSizeSet = function () {
+            window.clientWidth = docEl.clientWidth
+            clientWidth = (clientWidth > maxV) ? maxV : clientWidth
+            window.fontSize = rootV * (clientWidth / normalV)
+            docEl.style.fontSize = fontSize + 'px'
+        }
+        fontSizeSet()
+        window.onresize = fontSizeSet
+    }
+
+    remLayOut()
+</script>
+<script src="../static/js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    /* 水平溢出隐藏 */
+    overflow-y: auto;
+    /* 垂直溢出自动 */
+    background-color: #f5f5f5;
+}
+
+.wrap {
+    max-width: 500px;
+    /* 设置最大宽度 */
+    margin: 0 auto;
+    /* 容器水平巨中 */
+}
+
+.wrap .list {
+    margin: 0 auto;
+    width: 15rem;
+}
+
+.wrap:last-child {
+    float: right;
+}
+
+.wrap .list {
+    width: 7.2rem;
+    float: left;
+}
+
+.wrap .list li .item {
+    border-radius: 0.3rem;
+    display: block;
+    overflow: auto;
+}
+
+
+.wrap .list li .item {
+    margin-left: 0.575rem;
+    margin-top: 0.5rem;
+    border-radius: 0.3rem;
+    display: block;
+    overflow: auto;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+
+}
+
+.wrap .list li .item img {
+    display: block;
+}
+
+.wrap .list li .item h3{
+    color: black;
+    font-size:0.4rem;
+    line-height: 1.05rem;       /*垂直居中*/
+    margin:13px 15px 11px 15px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display:-webkit-box;        /*弹性伸缩盒子模型显示 。*/
+    -webkit-box-orient: vertical;     /*从上向下垂直排列子元素。*/
+    -webkit-line-clamp: 2;    /*标题行数*/
+
+}
+h3{
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    font-weight: bold;
+}
